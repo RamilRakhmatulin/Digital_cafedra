@@ -17,7 +17,7 @@ print("Fail Variables.py")
 # # закрытие файла
 
 
-with open("file.txt", "w+") as file:
+with open("file2.txt", "w+") as file:
     file.write(str(123))
     file.seek(0)
     print(file.read())
