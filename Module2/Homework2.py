@@ -1,7 +1,5 @@
 import os
-import shutil
 from os import path
-import tempfile
 from pathlib import Path
 comand=input("Введите команду: ")
 comand_lst=comand.split(" ")
@@ -9,8 +7,6 @@ cur_path=os.getcwd()
 cdcur_path=cur_path
 copy=cdcur_path
 buf="no"
-# cd_dirs=comand_lst[1].split("/")
-# print(cd_dirs)
 while comand_lst[0]!="exit":
     if(comand_lst[0]=="pwd"):
         print(os.getcwd())
@@ -21,15 +17,6 @@ while comand_lst[0]!="exit":
         else:
             copy=os.getcwd()
             cd_path = Path(os.getcwd()) / comand_lst[1]
-            # try:
-            #     os.chdir(Path(cdcur_path))
-            # except FileNotFoundError:
-            #     print("директории  ", comand_lst[1], "не существует")
-            #     buf = input("хотите создать директорию ? (y/n)")
-            #     if buf == "y":
-            #         os.makedirs((comand_lst[1]))
-            #
-            # #             break
             for item in cd_dirs:
                 if Path(item).exists():
                     cdcur_path=Path(cdcur_path)/item
