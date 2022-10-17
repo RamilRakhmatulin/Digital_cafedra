@@ -1,7 +1,7 @@
 import os
-from os import  path
+from os import path
 from pathlib import Path
-print("Fail Main.py")
+print("File Main.py")
 file=open("..\Module1\main.py", "r")
 print(file.read())
 file.close()
@@ -38,8 +38,8 @@ with file_path.open("w+") as file:
 
 # os.remove("file2.txt")
 # print(os.path.exists("file2.txt"))
-print(Path("file.txt").exists())
-
+print(Path("files.py").exists())
+print(Path("files.py"))
 
 print(file_path)
 print(path.basename(file_path))
@@ -53,5 +53,5 @@ TEST=os.environ.get(
     "TEST",
     "default value for environment variable "
 )
-print("test",TEST)
+print("test", TEST)
 
