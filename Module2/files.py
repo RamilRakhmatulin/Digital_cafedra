@@ -7,10 +7,10 @@ print(file.read())
 file.close()
 
 # print("Fail Variables.py")
-# file=open("../Module1/variables.py", "r")
+# file = open("../Module1/variables.py", "r")
 # for line in file:
 #     print(line.strip())
-#
+# #
 # file.close()
 
 # with open("../Module1/variables.py", "r") as file:
